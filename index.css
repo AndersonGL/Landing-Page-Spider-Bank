@@ -1,0 +1,165 @@
+
+body{
+    background-color: rgb(3, 2, 2);
+    color:white;
+    font-family: poppinsregular;
+    max-inline-size: 1200px;
+    margin: 7px;
+    padding: 0px;
+
+}
+
+header{
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+#title {
+    flex-direction: column;
+    line-height: 20px;
+}
+li{
+    display: inline-block;
+    margin: 40px;
+}
+
+a{
+    color: rgb(255, 255, 255);
+
+}
+
+a:hover{
+    color: rgb(201, 14, 14);
+    transition: 0,3s all;
+}
+
+#Inscreva-se-btn{
+    border: 3px solid rgb(201, 14, 14);
+    padding:  10px;
+    border-radius: 30px;
+
+}
+#Inscreva-se-btn:hover{
+    background-color: rgb(201, 14, 14);
+    color:white
+
+
+}
+
+
+h1{
+    font-weight: 100px;
+
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 0px;
+
+}
+
+h2{
+    font-size: 40px;
+    line-height: 40px;
+    font-family: poppinsmedium;
+
+}
+
+span{
+    color: rgb(201, 14, 14);
+
+}
+
+p{
+    line-height: 25px;
+    max-inline-size: 500px;
+    font-family: poppinslight;
+
+}
+
+img{
+    inline-size: 480px;
+
+
+}
+
+form{
+
+    display: flex;
+    flex-direction: column;
+    inline-size: 90%;
+
+}
+
+form [type="submit"]{
+    block-size: 50px;
+    inline-size: 50%;
+    background-color: rgb(201, 14, 14);
+    color: white;
+    font-weight: bold;
+
+
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+
+
+}
+
+
+input{
+    margin-block-start: 20px;
+    block-size: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: Nome;
+    font-size: 15px;
+
+  @media screen and (max-inline-size: 10000px){
+    
+    header{
+
+        flex-direction:column ;        
+    }
+
+    main{
+
+        flex-direction:column;
+    }
+
+    h2{
+
+        font-size: 35px;
+    }
+
+    form{
+        margin: auto;
+        inline-size: 100%;
+
+    }
+
+    input{
+        align-self:center;
+
+    }
+
+    img{
+        inline-size: 0px;
+        margin-block-start: 0px;
+    }
+
+    ul{
+        text-align:center;
+    }
+
+
+
+}
+
+
