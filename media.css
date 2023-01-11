@@ -1,4 +1,4 @@
-@media screen and (max-width: 560px){
+@media screen and (max-width: 760px){
 
     header{
         flex-direction:left;
@@ -34,7 +34,7 @@
     }
 
     img{
-        display: none;
+        display: center;
     }
 
     ul{
