@@ -53,8 +53,14 @@ a:hover{
 
 h1{
     font-weight: 100px;
+     color: white;
 
 }
+.h1color h1{
+  
+    color: white;
+}
+
 main{
     display: flex;
     flex-direction: row;
@@ -69,8 +75,8 @@ h2{
     
 }
 
-span{
-    color: rgb(201, 14, 14);
+h2{
+    color:  rgb(201, 14, 14);
 
 }
 
@@ -82,7 +88,7 @@ p{
 }
 
 img{
-    inline-size: 500px;
+    inline-size: 450px;
 
 
 }

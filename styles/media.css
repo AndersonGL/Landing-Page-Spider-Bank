@@ -29,6 +29,7 @@
         text-align: center;
         margin-right: 40px;
         font-size: 15px;
+        height: 100px;
         
         
 
@@ -37,16 +38,18 @@
     h2{
         font-size: 20px;
         text-align: center;
+        height: 30px;
         
     }
   
     p {
       
-    text-align: center;
-    margin: 12px;
+    text-align: center center;
+    margin: 50px;
     font-size: 14px;
-      height:0 px;
-      
+    height: 0px;
+   
+    
 }
 
     form{
@@ -58,7 +61,7 @@
 
     input{
         align-self: center;
-        
+       
        
     }
 
