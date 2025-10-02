@@ -1,73 +1,84 @@
-@media screen and (max-width: 760px)
-{
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+
+/* Telas de Tablets e Dispositivos Menores (máximo 768px) */
+@media (max-width: 768px) {
     
-    header{
-      
-        flex-direction:center;
-        text-align:center;
-        margin: left;  
-        
-    }
-
-    main{
-      
-        flex-direction:center;
-        text-align:center;     
-       
-    }
-  
-    h1{
-         text-align: center;
-         font-size: 30px  ;
-         height: 50px;
-           
-    }
-  
-  ul{
-
-        flex-direction:left left;
+    /* HEADER */
+    header {
+        flex-direction: column;
         text-align: center;
-        margin-right: 40px;
-        font-size: 15px;
-        height: 100px;
-        
-        
-
+        padding: 15px 5%;
     }
 
-    h2{
-        font-size: 20px;
-        text-align: center;
-        height: 30px;
-        
+    #logo-container {
+        margin-bottom: 15px;
     }
-  
-    p {
-      
-    text-align: center center;
-    margin: 50px;
-    font-size: 14px;
-    height: 0px;
-   
+
+    #navbar ul {
+        gap: 15px;
+        /* Esconde o botão grande para economizar espaço e move a ação para o MAIN se necessário */
+        /* display: none; */ 
+    }
     
-}
-
-    form{
-      
-        margin: 0 auto;
-        width: 50%;
-        
+    /* Esconde o link 'Acessar Conta' do menu principal para telas pequenas 
+       para não sobrecarregar e focar no CTA da Hero Section */
+    #acessar-conta-btn {
+        display: none; 
     }
 
-    input{
-        align-self: center;
-       
-       
+    /* SEÇÃO HERO */
+    #hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+    
+    aside {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    
+    aside h2 {
+        font-size: 2.5rem;
+    }
+    
+    aside h3 {
+        font-size: 1.2rem;
     }
 
-    img{
-        display: none;
+    /* IMAGEM */
+    #hero-image {
+        margin-top: 30px;
+    }
+    
+    #hero-image img {
+        max-width: 80%;
     }
 }
 
+
+/* Telas de Celulares (máximo 480px) */
+@media (max-width: 480px) {
     
+    #navbar ul {
+        flex-wrap: wrap; /* Permite que os links quebrem linha */
+        justify-content: center;
+    }
+
+    #logo-container h1 {
+        font-size: 2rem;
+    }
+    
+    aside h2 {
+        font-size: 2rem;
+    }
+    
+    aside h3 {
+        font-size: 1rem;
+    }
+    
+    /* A imagem pode ficar menor em telas muito pequenas */
+    #hero-image img {
+        max-width: 90%;
+    }
+}
